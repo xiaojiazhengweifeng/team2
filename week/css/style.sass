@@ -1,0 +1,80 @@
+body
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: flex
+  flex-direction: column
+  font-size: .12rem
+.header
+  height: .4rem
+  position: relative
+  .list
+    width: 100px
+    height: .4rem
+    margin: 0 auto
+    display: flex
+    li
+      flex: 1
+      text-align: center
+      line-height: .38rem
+    .active
+      border-bottom: 2px solid red
+      color: red
+  span
+    display: inline-block
+    width: 50px
+    position: absolute
+    right: .1rem
+    top: .14rem
+    i
+      padding-left: .05rem
+.content
+  flex: 1
+  overflow-y: scroll
+  .top
+    background: #f3f3f3
+    padding-left: .2rem
+    padding-right: .2rem
+    padding-top: .1rem
+    padding-bottom: .1rem
+    box-sizing: border-box
+    ul
+      background: #fff
+      display: flex
+      li
+        flex: 1
+        text-align: center
+        border: 1px solid #ccc
+        padding-top: .08rem
+        padding-bottom: .08rem
+      .active
+        background: red
+        color: #fff
+  .middle
+    ul
+      display: flex
+      margin-top: .1rem
+      margin-bottom: .1rem
+      li
+        flex: 1
+        text-align: center
+  .copy
+    height: 100px
+    background: yellow
+    position: relative
+    b
+      position: absolute
+      top: 0
+      left: 0
+      width: 0
+      height: 0
+      border-top: 50px solid greenyellow
+      border-right: 50px solid transparent
+      span
+        position: absolute
+        top: -43px
+        left: 3px
+    p
+      text-align: center
+      line-height: 30px

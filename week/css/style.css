@@ -1,0 +1,83 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.12rem; }
+
+.header {
+  height: 0.4rem;
+  position: relative; }
+  .header .list {
+    width: 100px;
+    height: 0.4rem;
+    margin: 0 auto;
+    display: flex; }
+    .header .list li {
+      flex: 1;
+      text-align: center;
+      line-height: 0.38rem; }
+    .header .list .active {
+      border-bottom: 2px solid red;
+      color: red; }
+  .header span {
+    display: inline-block;
+    width: 50px;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.14rem; }
+    .header span i {
+      padding-left: 0.05rem; }
+
+.content {
+  flex: 1;
+  overflow-y: scroll; }
+  .content .top {
+    background: #f3f3f3;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    box-sizing: border-box; }
+    .content .top ul {
+      background: #fff;
+      display: flex; }
+      .content .top ul li {
+        flex: 1;
+        text-align: center;
+        border: 1px solid #ccc;
+        padding-top: 0.08rem;
+        padding-bottom: 0.08rem; }
+      .content .top ul .active {
+        background: red;
+        color: #fff; }
+  .content .middle ul {
+    display: flex;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem; }
+    .content .middle ul li {
+      flex: 1;
+      text-align: center; }
+  .content .copy {
+    height: 100px;
+    background: yellow;
+    position: relative; }
+    .content .copy b {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 50px solid greenyellow;
+      border-right: 50px solid transparent; }
+      .content .copy b span {
+        position: absolute;
+        top: -43px;
+        left: 3px; }
+    .content .copy p {
+      text-align: center;
+      line-height: 30px; }
+
+/*# sourceMappingURL=style.css.map */
